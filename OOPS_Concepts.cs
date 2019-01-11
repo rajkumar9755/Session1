@@ -20,7 +20,7 @@ namespace OOPS_Concepts{
            width=w;
            height=h;
        }
-       /*Overriding of getArea() method is example for Runtime polmorphism*/
+       /*Calling of Overriden method getArea() during runtime is example for Runtime polmorphism*/
        public override int getArea()
         {
            return width*height;
@@ -57,10 +57,10 @@ namespace OOPS_Concepts{
    }
    class Solution {
       static void Main(string[] args) {
-         Rectangle rect1=new Rectangle();
-         Rectangle rect2= new Rectangle(4,5);
-         Square sqr=new Square(4);
-         Circle cir=new Circle(5);
+         Shape rect1=new Rectangle();
+         Shape rect2= new Rectangle(4,5);
+         Shape sqr=new Square(4);
+         Shape cir=new Circle(5);
          Console.WriteLine("Rectangle1 Area: {0}",  rect1.getArea());
          Console.WriteLine("Rectangle2 Area: {0}",  rect2.getArea());
          Console.WriteLine("Square Area: {0}",  sqr.getArea());
